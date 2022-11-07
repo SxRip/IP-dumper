@@ -117,11 +117,11 @@ API_IP GetIPInfo(const std::string& ip)
 	curl_easy_setopt(curl, CURLOPT_HTTPGET);
 	CURLcode code = curl_easy_perform(curl);
 
-	if (code != CURLE_OK)
-		return {};
-
 	curl_easy_cleanup(curl);
 	curl = nullptr;
+
+	if (code != CURLE_OK)
+		return {};
 
 	return ParseResponce(response);
 }
