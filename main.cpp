@@ -24,6 +24,9 @@ int main()
 	std::cout << "[ORG]\t" << api.org << std::endl;
 	std::cout << "[AS]\t" << api.as << std::endl;
 	std::cout << "[REVERSE]\t" << api.reverse << std::endl;
+	std::cout << "[MOBIELE?]\t" << api.mobile << std::endl;
+	std::cout << "[PROXY?]\t" << api.proxy << std::endl;
+	std::cout << "[HOSTING?]\t" << api.hosting << std::endl;
 
 	system("pause");
 	return 0;
